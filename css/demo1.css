@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+
+/* Color schemes */
+.demo-1 {
+	--color-text: #efedeb;
+	--color-bg: #0e0e0e;
+	--color-link: #1920f3;
+	--color-link-hover: #555;
+	--color-info: #fff;
+	--color-main-text: #1d1c1c;
+	--color-scroll-text: #efedeb;
+	--font-scroll-text: 'Roboto Mono', monospace;
+	--fontsize-scroll-text: 8vw;
+}
+
+.content__main {
+	color: var(--color-main-text);
+}
+
+.js .content__text::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 69%;
+	bottom: 0;
+	width: calc(6vmax - 1.5rem);
+	background: var(--color-link);
+}

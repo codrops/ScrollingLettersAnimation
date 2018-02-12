@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+/* Color schemes */
+.demo-4 {
+	--color-text: #fff;
+	--color-bg: #000 url(../img/set4/0.jpg) no-repeat;
+	background-size: 80%;
+	--color-link: #828282;
+	--color-link-hover: #fff;
+	--color-info: #fff;
+	--color-scroll-text: #fff;
+	--font-scroll-text: 'Archivo Black', monospace;
+	--fontsize-scroll-text: 8vw;
+}
+
+.content__img {
+	filter: brightness(1.5);
+}
+
+.content__text {
+	text-transform: uppercase;
+	font-size: 3vmax;
+	display: grid;
+	grid-template-columns: repeat(3,10vmax);
+	grid-auto-rows: 8vmax;
+	align-items: end;
+	justify-items: start;
+}
+
+.content__link {
+	display: inline-block;
+}
+
+.content__link::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: -5vw;
+	border: 10px solid #0c0c0c;
+}
+
+@media screen and (max-width: 40em) {
+	.demo-4 {
+		background-position: 50% 12rem;
+	}
+}

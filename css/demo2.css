@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+
+/* Color schemes */
+.demo-2 {
+	--color-text: #ddedf3;
+	--color-bg: linear-gradient(145deg, #bfb5fd, #4dd7d1) fixed;
+	--color-link: #934ae8;
+	--color-link-hover: #4facd6;
+	--color-info: #ddedf3;
+	--color-main-text: #ddedf3;
+	--color-scroll-text: #934ae8;
+	--font-scroll-text: 'Nanum Gothic Coding', monospace;
+	--fontsize-scroll-text: 8vw;
+}
+
+.content__main {
+	color: var(--color-main-text);
+}
+
+.content__text {
+	mix-blend-mode: color-burn;
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+
+/* Color schemes */
+.demo-3 {
+	--color-text: #fff;
+	--color-bg: #6314e0;
+	--color-link: #93fbfb;
+	--color-link-hover: #fff;
+	--color-info: #fff;
+	--color-main-text: #93fbfb;
+	--color-scroll-text: #fff;
+	--font-scroll-text: 'Josefin Sans', monospace;
+	--fontsize-scroll-text: 8vw;
+	transition: background-color 0.4s;
+}
+
+.content__section:not(:first-child) {
+	min-height: 100vh;
+}
+
+.content__main, 
+.content__contact {
+	color: var(--color-main-text);
+}
+
+.content__img {
+	margin: 0 auto;
+}
+
+.content__text {
+	font-weight: 300;
+}
+
+@media screen and (max-width: 50em) {
+	.content__section:not(:first-child) {
+		min-height: 0;
+	}
+}

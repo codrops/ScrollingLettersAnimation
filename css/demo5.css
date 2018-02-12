@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+/* Color schemes */
+.demo-5 {
+	--color-text: #fff;
+	--color-bg: #000;
+	--color-link: #828282;
+	--color-link-hover: #fff;
+	--color-info: #fff;
+	--color-scroll-text: #fff;
+	--font-scroll-text: 'Montserrat', monospace;
+	--fontsize-scroll-text: 8vw;
+}
+
+.codrops-header {
+	padding-bottom: 3rem;
+}
+
+.content__section:first-child {
+    margin: 0 0 50vh;
+}
+
+.content__link {
+	margin: 20vh 0 40vh;
+}
+
+.content__img {
+	margin: 0 auto;
+	opacity: 0.5;
+}
+
+.content__text {
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	font-weight: 900;
+	text-transform: uppercase;
+	bottom: auto;
+	line-height: 1.1;
+	top: calc(50vh - 2rem);
+	font-size: 9vmax;
+}
+
+.animate {
+	animation: glitch-anim-text 0.3s 3 alternate linear forwards;
+}
+
+@keyframes glitch-anim-text {
+	0% { 
+		transform: translate3d(-10px,0,0) scale3d(-1,-1,1);
+		-webkit-clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+		clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+	}
+	20% {
+		-webkit-clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+		clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+	}
+	30% {
+		color: var(--color-scroll-text);
+		-webkit-clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+		clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+	}
+	40% {
+		color: #f53d3e;
+		-webkit-clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+		clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+	}
+	43% {
+		color: var(--color-scroll-text);
+	}
+	50% {
+		-webkit-clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+		clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+	}
+	60% {
+		-webkit-clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+		clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+	}
+	70% {
+		-webkit-clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+		clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+	}
+	80% {
+		-webkit-clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+		clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+	}
+	90% {
+		transform: translate3d(-10px,0,0) scale3d(-1,-1,1);
+	}
+	90.1% {
+		transform: translate3d(0,0,0) scale3d(1,1,1);
+	}
+	100% {
+		transform: none;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+}
+
+@media screen and (max-width: 40em) {
+	.content__text {
+		font-size: 10vw;
+	}
+}
